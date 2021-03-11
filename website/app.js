@@ -5,9 +5,9 @@
 
 
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey = '&appid=e18ff7f1e1d24ae4969c11a2fa0da909';
+const apiKey = '&appid=e18ff7f1e1d24ae4969c11a2fa0da909&units=imperial';
 
 const formm= document.getElementById("form")
 const btn =document.getElementById("generate")
@@ -20,9 +20,9 @@ const tempSpan =  document.getElementById("tempS")
 const dateSpan =  document.getElementById("dateS")
 const feelingsSpan =  document.getElementById("feelingsS")
 
-tempSpan.textContent=""
-dateSpan.textContent=""
-feelingsSpan.textContent=""
+// tempSpan.textContent=""
+// dateSpan.textContent=""
+// feelingsSpan.textContent=""
 
 zip.addEventListener('change',()=>{
   tempSpan.textContent=""

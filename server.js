@@ -36,5 +36,9 @@ app.post('/add',(req,res)=>{ //send to server
     res.send(projectData)
                                })
 // Setup Server
+const server = app.listen(3000, listening)
+
 const PORT = 3000
-app.listen(PORT)
+function listening() {
+  console.log(`running on localhost: ${PORT}`);
+};
