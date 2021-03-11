@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.navbar{
+    display: inline-flex;
+}
+
+#app ul{
+    list-style: none;
+}
+#app ul li{
+    margin: auto 20px;
+    position: relative;
+}
+
+img{width: 70px; height:70px;}
+
+.inputCon{
+    position: relative;
+    width:50%;
+    height:60vh;
+    margin:40px 120px ;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+     background-color: lightgoldenrodyellow
+ 
+}
+.holder_zip{
+    width:100%;
+    height: 20%;
+    position: relative;
+
+}
+.holder_feel{
+    width:100%;
+    height: 60%;
+    position: relative;
+
+}
+.holder_zip{
+    
+    /* background-color: chartreuse; */
+}
+.holder_feel{
+  /* background-color: chocolate;  */
+}
+.holder_zip label{
+    position: absolute;
+    top:40%;
+    left :19%
+ 
+ 
+}
+.holder_feel label{
+   position: absolute;
+   top:10px;
+   left :32%
+
+}
+.holder_zip input{
+    border:3px solid rgb(235, 202, 14);
+    border-radius: 3px;
+    position: absolute;
+    top:40%;
+    left :44%
+}
+
+.holder_feel textarea  {
+    position: absolute;
+    bottom:40px;
+    left :18%;
+    width:60%;
+    height:20vh;
+    overflow: scroll;
+    border:3px solid rgb(235, 202, 14);;
+    border-radius: 3px;
+}
+
+
+ #generate
+  
+{    display: block;
+     cursor: pointer;
+     margin : 10px auto;
+     padding:2px;
+     border:1px solid  rgb(235, 202, 14);
+     border-radius: 20px;
+     background-origin: border-box;
+     background-clip: border-box;
+     
+
+}
+
+.floating{ 
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:50%;
+    background-color:green;
+    height:60vh;
+    top:0;
+    left:0;
+    z-index: -1;
+    transition: 1s ease-in-out;
+}
+
+#generate:hover  .floating {
+    background-color:lightgoldenrodyellow;
+    left:110%;
+   
+}
+
+.floating div {
+    font-size: 20px;
+    
+}
+
+.floating :nth-child(2) {
+    overflow: scroll;
+    
+}
