@@ -20,13 +20,20 @@ const tempSpan =  document.getElementById("tempS")
 const dateSpan =  document.getElementById("dateS")
 const feelingsSpan =  document.getElementById("feelingsS")
 
+tempSpan.textContent=""
+dateSpan.textContent=""
+feelingsSpan.textContent=""
 
-
-    
+zip.addEventListener('change',()=>{
+  tempSpan.textContent=""
+  dateSpan.textContent=""
+  feelingsSpan.textContent=""
+})    
 
 formm.addEventListener('submit',async function  submitInputForm (e)
 {
     e.preventDefault();
+
     zipCode=zip.value.trim("")
     gettemp(zipCode).then((temp)=>
      {
