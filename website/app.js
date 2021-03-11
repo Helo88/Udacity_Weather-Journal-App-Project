@@ -20,9 +20,7 @@ const tempSpan =  document.getElementById("tempS")
 const dateSpan =  document.getElementById("dateS")
 const feelingsSpan =  document.getElementById("feelingsS")
 
-tempSpan.textContent=""
-dateSpan.textContent=""
-feelingsSpan.textContent=""
+
 
 zip.addEventListener('change',()=>{
   tempSpan.textContent=""
