@@ -20,13 +20,13 @@ const tempSpan =  document.getElementById("tempS")
 const dateSpan =  document.getElementById("dateS")
 const feelingsSpan =  document.getElementById("feelingsS")
 
-<<<<<<< HEAD
-// tempSpan.textContent=""
-// dateSpan.textContent=""
-// feelingsSpan.textContent=""
-=======
+// <<<<<<< HEAD
+// // tempSpan.textContent=""
+// // dateSpan.textContent=""
+// // feelingsSpan.textContent=""
+// =======
 
->>>>>>> e18323ca9ad194ee7de4292b4ef76d39f313cbc3
+// >>>>>>> e18323ca9ad194ee7de4292b4ef76d39f313cbc3
 
 zip.addEventListener('change',()=>{
   tempSpan.textContent=""
